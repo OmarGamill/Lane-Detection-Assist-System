@@ -16,10 +16,16 @@ This repository contains the Lane Detection Assist System, which includes two di
 - **GPS Module**: Provides real-time location data to enhance the accuracy of lane detection.
 - **LCD Display**: Displays lane detection status and warnings to the driver.
 - **Power Supply**: Ensures the system has a reliable power source during operation.
-<img src="https://github.com/OmarGamill/Lane-Detection-Assist-System/blob/main/images/car_L0.jpg" alt="Lane Detection Example" width="200"/>
-<img src="https://github.com/OmarGamill/Lane-Detection-Assist-System/blob/main/images/car_L1.jpg" alt="Lane Detection Example" width="200"/>
-<img src="https://github.com/OmarGamill/Lane-Detection-Assist-System/blob/main/images/car_L2.jpg" alt="Lane Detection Example" width="200"/>
-<img src="https://github.com/OmarGamill/Lane-Detection-Assist-System/blob/main/images/car_L3.jpg" alt="Lane Detection Example" width="200"/>
+<div style="display: flex; justify-content: space-around;">
+  <img src="https://github.com/OmarGamill/Lane-Detection-Assist-System/blob/main/images/car_L0.jpg" alt="Lane Detection Example" width="300"/>
+  <img src="https://github.com/OmarGamill/Lane-Detection-Assist-System/blob/main/images/car_L1.jpg" alt="Lane Detection Result" width="300"/>
+</div>
+
+<div style="display: flex; justify-content: space-around;">
+  <img src="https://github.com/OmarGamill/Lane-Detection-Assist-System/blob/main/images/car_L2.jpg" alt="Lane Detection Example" width="300"/>
+  <img src="https://github.com/OmarGamill/Lane-Detection-Assist-System/blob/main/images/car_L3.jpg" alt="Lane Detection Result" width="300"/>
+</div>
+
 
 ### Software Components
 - **Programming Languages**: Python

@@ -17,10 +17,10 @@ This repository contains the Lane Detection Assist System, which includes two di
 - **LCD Display**: Displays lane detection status and warnings to the driver.
 - **Power Supply**: Ensures the system has a reliable power source during operation.
 <img src="https://github.com/OmarGamill/Lane-Detection-Assist-System/blob/main/images/car_L0.jpg" alt="Lane Detection Example" width="200"/>
-![car_L0](https://github.com/OmarGamill/Lane-Detection-Assist-System/blob/main/images/car_L0.jpg)
-![car_L1](https://github.com/OmarGamill/Lane-Detection-Assist-System/blob/main/images/car_L1.jpg)
-![car_L2](https://github.com/OmarGamill/Lane-Detection-Assist-System/blob/main/images/car_L2.jpg)
-![car_L3](https://github.com/OmarGamill/Lane-Detection-Assist-System/blob/main/images/car_L3.jpg)
+<img src="https://github.com/OmarGamill/Lane-Detection-Assist-System/blob/main/images/car_L1.jpg" alt="Lane Detection Example" width="200"/>
+<img src="https://github.com/OmarGamill/Lane-Detection-Assist-System/blob/main/images/car_L2.jpg" alt="Lane Detection Example" width="200"/>
+<img src="https://github.com/OmarGamill/Lane-Detection-Assist-System/blob/main/images/car_L3.jpg" alt="Lane Detection Example" width="200"/>
+
 ### Software Components
 - **Programming Languages**: Python
 - **Computer Vision Libraries**: OpenCV

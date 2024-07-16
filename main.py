@@ -2,10 +2,10 @@ import argparse
 from LaneDetection_openCV import LaneModule 
 from  UlterFastLaneDetection import videoLaneDetection
 
-def run_video_lane_detection():
+def run_video_lane_detection(path_to_video):
     print("Running video lane detection...")
 
-    videoLaneDetection.main()
+    videoLaneDetection.main(path_to_video)
 
     print("Video lane detection is complete.")
 
@@ -21,13 +21,20 @@ def main():
         choices=['videoLaneDetection', 'LaneModule'],
         help="The file to run"
     )
+    parser.add_argument(
+        '--video',
+        type=str,
+        help="The path to the video file for video lane detection"
+    )
 
     args = parser.parse_args()
 
     if args.file == 'videoLaneDetection':
-        run_video_lane_detection()
+        if not args.video:
+            parser.error("--video argument is required for videoLaneDetection")
+        run_video_lane_detection(args.video)
     elif args.file == 'LaneModule':
         run_lane_module()
-
+        
 if __name__ == "__main__":
     main()

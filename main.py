@@ -9,9 +9,9 @@ def run_video_lane_detection(path_to_video):
 
     print("Video lane detection is complete.")
 
-def run_lane_module():
+def run_lane_module(path_to_video):
     print("Running lane module...")
-    LaneModule.main()
+    LaneModule.main(path_to_video)
     print("Lane module is complete.")
 
 def main():
@@ -34,7 +34,9 @@ def main():
             parser.error("--video argument is required for videoLaneDetection")
         run_video_lane_detection(args.video)
     elif args.file == 'LaneModule':
-        run_lane_module()
+        if not args.video:
+            parser.error("--video argument is required for LaneModule")
+        run_lane_module(args.video)
         
 if __name__ == "__main__":
     main()

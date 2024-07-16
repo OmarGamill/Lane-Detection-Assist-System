@@ -1,7 +1,7 @@
 ## Graduation Project: Lane Detection Assist System
 
 ![Lane Detection Example](https://github.com/OmarGamill/Lane-Detection-Assist-System/blob/main/car_fully_system.gif)
-
+![Demo](https://github.com/OmarGamill/Lane-Detection-Assist-System/blob/main/Demo.gif)
 
 ### Project Overview
 The **Lane Detection Assist System** is an advanced computer vision project aimed at enhancing vehicle safety and driver assistance. This system leverages state-of-the-art hardware and software technologies to detect lane markings on the road, providing real-time feedback and assistance to the driver. The goal is to reduce the risk of accidents by ensuring the vehicle remains within its designated lane.

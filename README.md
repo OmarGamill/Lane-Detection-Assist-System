@@ -3,6 +3,8 @@
 ### Project Overview
 The **Lane Detection Assist System** is an advanced computer vision project aimed at enhancing vehicle safety and driver assistance. This system leverages state-of-the-art hardware and software technologies to detect lane markings on the road, providing real-time feedback and assistance to the driver. The goal is to reduce the risk of accidents by ensuring the vehicle remains within its designated lane.
 
+This repository contains the Lane Detection Assist System, which includes two different approaches for lane detection using OpenCV and Ultrafast Lane Detection models.
+
 ### Hardware Components
 - **Raspberry Pi 4**: The primary processing unit for running the lane detection algorithms.
 - **Camera Module**: Captures real-time video feed of the road ahead.
@@ -19,12 +21,6 @@ The **Lane Detection Assist System** is an advanced computer vision project aime
 - **Operating System**: Raspbian (for Raspberry Pi)
 - **Other Tools**: Kaggle and Colap Notebook
 
-### Key Features
-- **Real-Time Lane Detection**: Utilizes computer vision techniques to identify lane markings in real-time.
-- **Driver Alerts**: Provides audio and visual alerts when the vehicle deviates from its lane.
-- **Obstacle Detection**: Uses ultrasonic sensors to detect obstacles and provide warnings.
-- **User Interface**: LCD shows real-time lane status and alerts.
-
 ### Methodology
 1. **Video Processing**: The camera module captures continuous video feed, which is primarily processed using OpenCV to detect lane lines. As a secondary method, the Ultrafast Lane Detector is employed for enhanced performance in specific scenarios.
 2. **Edge Detection**: Canny edge detection algorithm in OpenCV is applied to identify the edges of lane markings.
@@ -33,15 +29,45 @@ The **Lane Detection Assist System** is an advanced computer vision project aime
 5. **Obstacle Detection**: Ultrasonic sensors continuously measure the distance to potential obstacles and trigger alerts if necessary.
 6. **Integration and Testing**: The system is integrated with the hardware components and thoroughly tested under various driving conditions.
 
-### Challenges and Solutions
-- **Lighting Conditions**: The system was tested and optimized to work effectively under different lighting conditions, including low light and glare.
-- **Real-Time Processing**: Efficient algorithms and hardware acceleration were implemented to ensure real-time performance.
-- **Accuracy**: The integration of GPS data and advanced computer vision techniques helped in improving the accuracy of lane detection.
+## Repository Structure
 
-### Future Work
-- **Advanced Lane Detection**: Implementing machine learning models to enhance lane detection accuracy in complex scenarios.
-- **Additional Sensors**: Integrating more sensors like LIDAR for better obstacle detection.
-- **Vehicle Control**: Extending the system to not only detect but also control the vehicle's steering to keep it within the lane autonomously.
+### 1. LaneDetection_openCV
+
+This folder contains the following files:
+
+1. **LaneModule.py**: Main module for lane detection using OpenCV.
+2. **WebcamModule.py**: Module for capturing webcam input.
+3. **picker_script.py**: Script for selecting parameters.
+4. **utils.py**: Utility functions used in lane detection.
+
+**Start point**: `LaneModule.py`
+
+### 2. UlterFastLaneDetection
+
+This folder contains:
+
+- **models**: This sub-folder contains the pre-trained models for Ultrafast Lane Detection.
+- **utilities**:
+  - `backbone.py`: Backbone network used in the model.
+  - `model.py`: Model architecture for lane detection.
+  - `ultrafastLaneDetector.py`: Main detector class using Ultrafast Lane Detection.
+
+**Start point**: `videoLaneDetection.py`
+
+### 3. Main Files
+
+1. **main.py**: Script to choose between the two-lane detection systems using command-line arguments.
+2. **requirements.txt**: List of dependencies required to run the project.
+
+## How to Use and Run the Repository
+
+### Installation
+
+1. Clone the repository:
+   
+  ```bash
+  git clone https://github.com/your-username/LaneDetectionAssistSystem.git
+  cd LaneDetectionAssistSystem
 
 ### Conclusion
 The **Lane Detection Assist System** is a comprehensive project that demonstrates the practical application of computer vision and machine learning in enhancing vehicle safety. By combining robust hardware with advanced software techniques, this project aims to contribute to the development of intelligent driver assistance systems.

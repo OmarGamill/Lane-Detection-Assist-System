@@ -1,5 +1,6 @@
 ## Graduation Project: Lane Detection Assist System
 
+
 ### Project Overview
 The **Lane Detection Assist System** is an advanced computer vision project aimed at enhancing vehicle safety and driver assistance. This system leverages state-of-the-art hardware and software technologies to detect lane markings on the road, providing real-time feedback and assistance to the driver. The goal is to reduce the risk of accidents by ensuring the vehicle remains within its designated lane.
 
@@ -35,10 +36,10 @@ This repository contains the Lane Detection Assist System, which includes two di
 
 This folder contains the following files:
 
-1. **LaneModule.py**: Main module for lane detection using OpenCV.
-2. **WebcamModule.py**: Module for capturing webcam input.
-3. **picker_script.py**: Script for selecting parameters.
-4. **utils.py**: Utility functions used in lane detection.
+1. `LaneModule.py`: Main module for lane detection using OpenCV.
+2. `WebcamModule.py`: Module for capturing webcam input.
+3. `picker_script.py`: Script for selecting parameters.
+4. `utils.py`: Utility functions used in lane detection.
 
 **Start point**: `LaneModule.py`
 
@@ -56,24 +57,71 @@ This folder contains:
 
 ### 3. Main Files
 
-1. **main.py**: Script to choose between the two-lane detection systems using command-line arguments.
-2. **requirements.txt**: List of dependencies required to run the project.
+1. `main.py`: Script to choose between the two-lane detection systems using command-line arguments.
+2. `requirements.txt`: List of dependencies required to run the project.
+
+### Dataset
+
+This project uses the Tusample dataset. You can download it from [Kaggle](https://www.kaggle.com/datasets/manideep1108/tusimple).
+
+### Training the Model
+
+To train the model using Google Colab, follow these steps:
+
+1. Open [Google Colab](https://colab.research.google.com/drive/1FACfF5yCfwlddUy5ZHfInZ4Wqf5xgkkF?usp=sharing).
+2. Run the training script.
+
+### Testing the Model
+
+You can test the model with a video input to see the lane detection in action. Below is an example command to run the test:
+
+    ```bash
+    python videoLaneDetection.py --video path/to/video.mp4
+
+### Results
+
+Watch the result of lane detection in action:
+
+- **Demo Video:** [Link to demo video](https://drive.google.com/file/d/1nqunV3IaRufQ2DzsFlCOwpjJOagzz_Gl/view?usp=sharing)
+- **Result Video:** [Link to result video](https://drive.google.com/file/d/192FndntNAXjbCHP1dH7iQlgtS830WMG7/view?usp=sharing)
 
 ## How to Use and Run the Repository
 
 ### Installation
 
 1. Clone the repository:
+   ```bash
+   git clone https://github.com/OmarGamill/Lane-Detection-Assist-System.git
+
+2. Navigate to the project directory:
+    ```bash
+    cd Lane-Detection-Assist-System
+    
+3. Install the required dependencies:
+   ```bash
+   pip install -r requirements.txt
+
+4. Run the main script:
+   ```bash
+   python main.py [file] [--video path/to/video.mp4]
    
-  ```bash
-  git clone https://github.com/your-username/LaneDetectionAssistSystem.git
-  cd LaneDetectionAssistSystem
+5. To run the OpenCV-based lane detection:
+   ```bash
+   python main.py LaneModule --video path/to/video.mp4
+   
+6. To run the Ultrafast Lane Detection:
+   ```bash
+   python main.py videoLaneDetection --video path/to/video.mp4
+   
 
 ### Conclusion
 The **Lane Detection Assist System** is a comprehensive project that demonstrates the practical application of computer vision and machine learning in enhancing vehicle safety. By combining robust hardware with advanced software techniques, this project aims to contribute to the development of intelligent driver assistance systems.
 
-### Contact
-For more details about this project, feel free to contact me:
-- **Email**: omar.gamil@example.com
-- **LinkedIn**: [Omar Gamil LinkedIn](https://www.linkedin.com/in/omar-gamil)
-- **GitHub**: [Omar Gamil GitHub](https://github.com/your-username)
+## Contributing
+
+Contributions are welcome! Please open issues or submit pull requests to improve the project.
+
+## Contact
+- **Email**: omargamel258@gmail.com
+- **LinkedIn**: [Omar Gamil LinkedIn](https://www.linkedin.com/in/omar-gamel-8628531b3/)
+- **GitHub**: [Omar Gamil GitHub](https://github.com/OmarGamill)

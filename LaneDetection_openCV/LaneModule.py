@@ -67,8 +67,8 @@ def getLaneCurve(img,display=2):
 
     return curve
 
-def main():
-    cap = cv2.VideoCapture('E:\lane_detection_v_1\Lane detect test data.mp4')
+def main(path):
+    cap = cv2.VideoCapture(path)
     #intialTracbarVals = [110,640,0,480]
     intialTrackBarVals = [102, 80, 20, 214 ]
     utlis.initializeTrackbars(intialTrackBarVals,wT=640,hT=480)

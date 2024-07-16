@@ -3,14 +3,14 @@ import matplotlib.pyplot as plt
 from UlterFastLaneDetection.utilities.ultrafastLaneDetector  import UltrafastLaneDetector, ModelType
 
 
-def main():
+def main(path_to_video):
     model_path = "E:\\git_hup_project\\UlterFastLaneDetection\\models\\mobilenet_large.pth"
     model_type = ModelType.TUSIMPLE
     use_gpu = False
 
 
     # Initialize video
-    cap = cv2.VideoCapture('E:\lane_detection_v_1\Lane detect test data.mp4')
+    cap = cv2.VideoCapture(path_to_video)
 
 
     # Initialize lane detection model
